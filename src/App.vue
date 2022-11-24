@@ -30,4 +30,15 @@ export default {
 ul {
   list-style: none;
 }
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+}
 </style>
