@@ -57,7 +57,6 @@ export default {
 .main-bot ul {
   display: flex;
   justify-content: space-around;
-  list-style: none;
   width: 100%;
 }
 

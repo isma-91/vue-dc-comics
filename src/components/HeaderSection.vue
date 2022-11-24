@@ -61,7 +61,6 @@ nav {
 
 ul {
   display: flex;
-  list-style: none;
   height: 100%;
 }
 
