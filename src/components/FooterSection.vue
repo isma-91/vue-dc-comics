@@ -165,6 +165,13 @@ gap: 4rem;
   margin: 0 1rem;
 }
 
+.socials li:hover {
+  cursor: pointer;
+  filter: brightness(1.8);
+  transform: translateY(-10px);
+  transition: 0.4s ease-out;
+}
+
 footer a:hover {
 color: white;
 text-decoration: underline;

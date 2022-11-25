@@ -3,12 +3,16 @@
     <div class="main-top" />
     <div class="main-middle">
       <div class="container">
+        <div class="news">
+          <h2>CURRENT SERIES</h2>
+        </div>
         <DcCard
           v-for="objComic in arrDcCards"
           :key="objComic.series"
           :comic="objComic"
           class="comic-card"
         />
+        <button class="btn-load-more">LOAD MORE</button>
       </div>
     </div>
     <div class="main-bot">
@@ -128,11 +132,11 @@ export default {
 
 .container {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   width: 1200px;
   height: 100%;
   margin: auto;
+  position: relative;
 }
 
 .main-top {
@@ -146,12 +150,42 @@ export default {
 }
 
 .main-middle {
-
+background-color: #1C1C1C;
   .container {
-    gap: 1rem;
+
+    padding: 4rem 0;
+    gap: 2rem;
   }
   .comic-card {
-    width: calc((100% - 1rem * 5) / 6);
+    flex: 0 1 auto;
+    width: calc((100% - 2rem * 5) / 6);
+  }
+
+  .comic-card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+  }
+  .news {
+    background-color: #0282F9;
+    color: white;
+    height: max-content;
+    position: absolute;
+    padding: .7rem;
+    bottom: 96%;
+    left: 0;
+  }
+  .btn-load-more{
+    background-color: #0282F9;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin: auto;
+    padding: .7rem 3rem;
+    font-weight: bold;
+  }
+
+  .btn-load-more:hover {
+    filter: brightness(1.2);
   }
 }
 
