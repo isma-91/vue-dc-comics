@@ -1,8 +1,8 @@
 <template>
   <div>
-    <HeaderSection/>
-    <MainSection/>
-    <FooterSection/>
+    <HeaderSection />
+    <MainSection />
+    <FooterSection />
   </div>
 </template>
 

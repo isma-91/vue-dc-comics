@@ -129,13 +129,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+@import '../assets/variables&classes.scss';
 .container {
-  display: flex;
   flex-wrap: wrap;
-  width: 1200px;
-  height: 100%;
-  margin: auto;
   position: relative;
 }
 
@@ -145,14 +141,12 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 600px;
-  color: white;
   padding: 3rem 0;
 }
 
 .main-middle {
 background-color: #1C1C1C;
   .container {
-
     padding: 4rem 0;
     gap: 2rem;
   }
@@ -162,21 +156,28 @@ background-color: #1C1C1C;
   }
 
   .comic-card:hover {
-  transform: translateY(-20px);
-  transition: 0.4s ease-out;
+    cursor: pointer;
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+    color: $dc-primary-color;
   }
   .news {
-    background-color: #0282F9;
-    color: white;
+    background-color: $dc-primary-color;
+    color: $primary-text-color;
     height: max-content;
     position: absolute;
     padding: .7rem;
     bottom: 96%;
     left: 0;
   }
+  .news:hover {
+    cursor: pointer;
+    transform: rotate(-15deg);
+    transition: all .5s ease;
+  }
   .btn-load-more{
-    background-color: #0282F9;
-    color: white;
+    background-color: $dc-primary-color;
+    color: $primary-text-color;
     cursor: pointer;
     border: none;
     margin: auto;
@@ -190,8 +191,8 @@ background-color: #1C1C1C;
 }
 
 .main-bot {
-  background-color: #0282F9;
-  color: white;
+  background-color:  $dc-primary-color;
+  color: $primary-text-color;
   text-transform: uppercase;
   padding: 3rem;
 }

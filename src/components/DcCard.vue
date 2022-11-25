@@ -20,22 +20,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/variables&classes.scss';
 
-.card:hover {
-  cursor: pointer;
+.card {
+  color: whitesmoke;
 }
 .comic-img {
   overflow: hidden;
   img {
   width: 100%;
-  margin-bottom: -100px;
+  margin-bottom: -90px;
   }
 }
 
 h3 {
   font-weight: 400;
   text-align: center;
-  color: whitesmoke;
   text-transform: uppercase;
   margin-top: .5rem;
 }
